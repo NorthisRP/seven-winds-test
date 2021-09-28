@@ -9,7 +9,6 @@ import { useTypedSelector } from "./hooks/useTypedSelector";
 
 export default function App() {
   const token = useTypedSelector((state) => state.token);
-
   return (
     <BrowserRouter>
       {token ? (

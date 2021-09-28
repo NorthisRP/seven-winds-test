@@ -1,7 +1,9 @@
 import { GetTokenAction, TokenActionTypes } from "../../types/authState";
 
-const token = JSON.parse(localStorage.getItem("user") || "")?.token;
-
+let token = "";
+if (localStorage.getItem("user") || "") {
+  token = JSON.parse(localStorage.getItem("user") || "");
+}
 const defaultState = token ? token : "";
 
 export const authReducer = (state = defaultState, action: GetTokenAction) => {
