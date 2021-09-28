@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 16px;
+}
+.button {
+  cursor: pointer;
+  &:hover {
+    color: green;
+  }
+}

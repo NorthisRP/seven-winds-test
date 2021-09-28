@@ -1,0 +1,22 @@
+.link {
+  text-decoration: none;
+  margin: 8px;
+  color: black;
+  &:hover {
+    color: green;
+  }
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+}
